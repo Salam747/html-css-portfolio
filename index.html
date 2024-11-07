@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section-split home-layout">
+    <div class="text-content">
+      <h2>HELLO, I'M ABDUL SALAM</h2>
+      <p><b>Welcome to my website! I'm Abdul Salam,
+         a passionate web developer with one year of hands-on experience in building dynamic and responsive web applications.
+         My journey in web development has been fueled by a strong foundation in
+          HTML, CSS, Tailwind CSS, JavaScript, TypeScript, and Next.js.
+         Explore my portfolio to see the projects I’ve worked on and how I can help bring your ideas.</b></p>
+    </div>
+    <div class="image-content">
+      <img src="home.jpg" alt="Home">
+    </div>
+  </section>
+  <hr>
+  <section id="about" class="section-split about-layout">
+    <div class="image-content">
+      <img src="about.jpg" alt="About">
+    </div>
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p><b>Hi there! I’m Abdul Salam,
+       a web developer with a passion for crafting beautiful and functional web experiences.
+      With one year of experience under my belt, I’ve honed my skills in HTML, CSS, Tailwind CSS, JavaScript, TypeScript, and Next.js.
+       My journey into web development began out of a curiosity to understand how websites work,
+       and it quickly grew into a passion for creating user-friendly and efficient web applications.</p>
+       <p>My approach to web development is centered around continuous learning and improvement.
+       I stay updated with the latest trends and technologies to ensure that the solutions
+       I build are not only innovative but also scalable and robust. Whether it's a simple static website or a complex web application,
+       I am dedicated to delivering high-quality work that meets the needs of my clients.</p>
+       <p>When I'm not coding, you can find me exploring new tech blogs,
+       participating in online coding challenges, or enjoying a good cup of coffee.
+       Let’s connect and see how we can collaborate to bring your web projects to life!</b></p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <i class="fab fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-paint-brush"></i>
+        <p>Tailwind CSS</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-code"></i>
+        <p>TypeScript</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-react"></i>
+        <p>Next.js/React.js</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 id="contactUs">Contact Us</h2>
+    <form id="contactForm">
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+      <label for="email"><b>Email:</b></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+      <label for="subject"><b>Subject:</b></label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required><br><br>
+      <label for="phone"><b>Phone Number:</b></label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+      <button type="submit"><b>Submit</b></button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Abdul Salam</p>
+  </footer>
+</body>
+</html>

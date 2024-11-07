@@ -1,0 +1,279 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  color:  #7a34eb;
+}
+
+header {
+  background-color: #7a34eb;
+  color: white;
+  padding: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  min-height: calc(100vh - 40px);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.section-split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.home-layout .text-content {
+  order: 1;
+}
+
+.home-layout .image-content {
+  order: 2;
+}
+
+.about-layout .image-content {
+  order: 1;
+}
+
+.about-layout .text-content {
+  order: 2;
+}
+
+.text-content, .image-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+}
+
+#about {
+  padding-left: 30px;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.image-content img {
+  margin-top: 70px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+hr{
+  border: 1px solid #7a34eb;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 2px solid #7a34eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+}
+
+.skill-box i {
+  font-size: 36px;
+  color: #7a34eb;
+}
+
+.skill-box p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+/* Contact Form */
+#contact form {
+
+  width: 90%;
+  max-width: 400px; 
+  display: flex;
+  flex-direction: column;
+  gap: calc(-55px); 
+  padding: calc(-55px);
+  box-sizing: border-box;
+  
+}
+
+#contact form label, #contact form input, #contact form button {
+  margin:0 auto;
+  width: 90%;
+  color:  #7a34eb;;
+}
+
+#contact form input, #contact form button {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+#contact form button {
+  background-color: #7a34eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #8934eb;
+}
+
+#contact h2 {
+  margin-top: 10px; 
+}
+
+/* Footer */
+footer {
+  background-color: #7a34eb;
+  color: white;
+  text-align: center;
+  padding: 2px;
+}
+
+/* Colors for sections */
+#home {
+  background-color: #fff;
+}
+
+#about {
+  background-color: #fff;
+}
+
+#skills {
+  background-color: #fff;
+}
+
+#contact {
+  background-color: #fff;
+}
+
+/* Media Queries for Responsive */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .section-split {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  
+  }
+
+  section p, section ul {
+    font-size: 14px;
+  }
+
+  #contact form {
+    padding: 0px;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  header, footer {
+    padding: 1px 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 3px 5px;
+  }
+
+  section h2 {
+    font-size: 18px;
+    
+  }
+
+  section p, section ul {
+    font-size: 12px;
+  }
+
+  #contact form {
+    padding: calc(-35px);
+    gap: calc(-35px);
+    
+  }
+}
